@@ -1,0 +1,9 @@
+ Create and write to the file
+with open("ppy.3.txt", "w") as file:
+    file.write("Hello from ppy.3.txt!\n")
+    file.write("This is a test file.\n")
+
+ Read the file content
+with open("ppy.3.txt", "r") as file:
+    content = file.read()
+    print("File content:\n", content)
