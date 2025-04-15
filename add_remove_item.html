@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add/Remove Items</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    #itemList li {
+      margin: 5px 0;
+    }
+    button {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Add/Remove Items</h2>
+  
+  <input type="text" id="itemInput" placeholder="Enter item" />
+  <button onclick="addItem()">Add</button>
+
+  <ul id="itemList"></ul>
+
+  <script>
+    function addItem() {
+      const input = document.getElementById('itemInput');
+      const itemText = input.value.trim();
+      if (itemText === "") return;
+
+      const li = document.createElement("li");
+      li.textContent = itemText;
+
+      const removeBtn = document.createElement("button");
+      removeBtn.textContent = "Remove";
+      removeBtn.onclick = function() {
+        li.remove();
+      };
+
+      li.appendChild(removeBtn);
+      document.getElementById("itemList").appendChild(li);
+
+      input.value = ""; // clear input
+    }
+  </script>
+
+</body>
+</html>
+``
