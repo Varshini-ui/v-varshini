@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ShopSmart – Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛒 ShopSmart</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-card">
+      <img src="https://source.unsplash.com/300x300/?headphones" alt="Headphones">
+      <h3>Wireless Headphones</h3>
+      <p>₹1999</p>
+      <a href="product.html" class="btn">View Details</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://source.unsplash.com/300x300/?watch
