@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Fest 2025</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to College Fest 2025 🎉</h1>
+    <p>Date: May 15–17, Venue: College Auditorium</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Events</a>
+      <a href="#">Register</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Unleash Your Talent!</h2>
+    <p>Join us for a 3-day celebration of culture, creativity, and competition!</p>
+    <a href="#" class="btn">Explore Events</a>
+  </section>
+
+  <!-- Botcraft embed here -->
+  <div id="bot"></div>
+
+  <footer>
+    <p>&copy; 2025 College Fest. All Rights Reserved.</p>
+  </footer>
+
+  <script src="botcraft.js"></script>
+</body>
+</html>
