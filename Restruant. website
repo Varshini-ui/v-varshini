@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delicious Bites</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      border-bottom: 2px solid #f8f9fa;
+    }
+
+    .table tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn:hover {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Delicious Bites</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu Section -->
+  <section id="menu" class="container my-5">
+    <h2 class="section-title">Our Menu</h2>
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pasta <span class="badge bg-success">New</span></td>
+          <td>Classic creamy Italian pasta</td>
+          <td>$12</td>
+        </tr>
+        <tr>
+          <td>Spicy Burger</td>
+          <td>Loaded with spicy sauce & veggies</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>Grilled Chicken <span class="badge bg-danger">Special</span></td>
+          <td>Marinated and grilled to perfection</td>
+          <td>$15</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Chef Recommendations -->
+  <section class="container mb-5">
+    <h3 class="section-title">Chef’s Recommendations</h3>
+    <ul class="list-group">
+      <li class="list-group-item">Garlic Butter Shrimp</li>
+      <li class="list-group-item">BBQ Chicken Wings</li>
+      <li class="list-group-item">Chocolate Lava Cake</li>
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="container mb-5">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/200x150?text=Dish+1" alt="Dish 1">
+      <img src="https://via.placeholder.com/200x150?text=Dish+2" alt="Dish 2">
+      <img src="https://via.placeholder.com/200x150?text=Dish+3" alt="Dish 3">
+      <img src="https://via.placeholder.com/200x150?text=Ambience" alt="Ambience">
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section class="container mb-5">
+    <h2 class="section-title">Restaurant Ambience</h2>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://via.placeholder.com/800x400?text=Interior+1" class="d-block w-100" alt="Interior 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/800x400?text=Interior+2" class="d-block w-100" alt="Interior 2">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Embedded Video Section -->
+  <section class="container mb-5">
+    <h3 class="section-title">Cooking Tutorial</h3>
+    <video width="100%" controls>
+      <source src="your-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="container mb-5">
+    <h2 class="section-title">Reserve a Table</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="col-md-6">
+        <input type="date" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <input type="number" class="form-control" placeholder="Number of Guests" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" placeholder="Any special request..." rows="3"></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Book Now</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
